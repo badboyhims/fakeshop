@@ -1,0 +1,155 @@
+#home .carousel img{
+    height: 500px;
+    object-fit: cover;
+    object-position: center -15px;
+    filter: brightness(0.6);
+}
+#home .carousel{
+    position: relative;
+}
+#home .carousel .heading{
+    font-size: 23px;
+    margin-bottom: 16px;
+    color: #cbcbcb;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+#navbar{
+    padding: 8px 0px;
+    color: white;
+}
+#home{
+    min-height: 90vh;
+}
+#footer{
+    width: 100%;
+    padding: 10px 0px;
+    color: white;
+    background-color: var(--basic);
+    text-align: center;
+}
+
+/* product card  */
+.productCardLink{
+    width: 16.55%;
+    padding: 10px 2px
+}
+.productCard{
+    width: 100%;
+    position: relative;
+    margin: 5px;
+    border: 1px solid #f8f8f8;
+    height: 270px;
+    box-shadow: 0 0 15px 0px rgb(206 206 206 / 80%);
+    transition: transform 0.5s;
+}
+.productCard:hover{
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.productCard .card-text{
+    font-size: 10px;
+}
+.productCard .brand{
+    font-size: 12px;
+}
+.productCard .id{
+    font-size: 10px;
+}
+.card-body {
+    padding: 10px 10px;
+}
+.productCard .card-img-top {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-body .price{
+    font-size: 16px;
+    color: green;
+    font-weight: 600;
+}
+
+#home .categoryHeading{
+    font-size: 23px;
+    color: var(--basic);
+    font-weight: 700;
+    text-align: center;
+}
+#home .box{
+    margin-bottom: 60px;
+    padding-bottom: 17px;
+}
+
+@media (max-width:1000px) {
+    .productCardLink{
+        width: 20%;
+    }
+}
+@media (max-width:742px) {
+    .productCardLink{
+        width: 25%;
+    }
+}
+@media (max-width:700px) {
+    #home .carousel img{
+        height: auto;
+        object-fit: cover;
+        object-position: center -15px;
+        filter: brightness(0.6);
+    }
+}
+@media (max-width:600px) {
+    .heading{
+        font-size: 21px;
+    }
+    .productCardLink{
+        width: 32%;
+    }
+    #home .carousel .heading {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width:500px) {
+    .subHeading{
+        font-size: 18px;
+    }
+    .productCard {
+        height: 242px;
+    }
+    .productCard .brand {
+        font-size: 10px;
+    }    
+}
+@media (max-width:400px) {
+    .productCardLink{
+        width: 50%;
+    }
+}
+
+@media (max-width: 350px){
+    .productCard {
+        height: 214px;
+    }
+}
+@media (max-width: 350px){
+    .productCard {
+        height: 200px;
+    }
+    .productCard .card-img-top {
+        min-height: 67%;
+    }
+}
+
+
